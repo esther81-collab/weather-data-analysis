@@ -1,4 +1,3 @@
-
 import csv
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -20,21 +19,20 @@ with csv_file.open("r", newline="", encoding="utf-8") as file:
 
 # Create the line chart
 plt.figure(figsize=(12, 6))
-plt.plot(dates, temperatures, marker="o", label="Temperature")
+plt.plot(dates, temperatures, marker="o", color="tab:orange", label="Temperature (°C)", linewidth=2)
 
-plt.title("Daily Temperature Analysis")
-plt.xlabel("Date")
-plt.ylabel("Temperature (°C)")
+plt.title("Daily Temperature Analysis", fontsize=14, fontweight="bold")
+plt.xlabel("Date", fontsize=12)
+plt.ylabel("Temperature (°C)", fontsize=12)
 plt.xticks(rotation=45)
-plt.grid(True)
-plt.legend()
+plt.grid(True, linestyle="--", alpha=0.6)
+plt.legend(loc="upper right")
 plt.tight_layout()
 
 # Save the chart
 output_file = project_dir / "visualizations" / "temperature_chart.png"
 output_file.parent.mkdir(parents=True, exist_ok=True)
 plt.savefig(output_file, dpi=150)
+plt.close()
 
-print(f"Chart saved to: {output_file}")
-plt.show()
-
+print(f"Temperature chart successfully saved to: {output_file}")
