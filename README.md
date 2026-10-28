@@ -1,10 +1,10 @@
-# 🌦️ Weather Data Analysis
+#  Weather Data Analysis
 
 An exploratory data analysis (EDA) project for weather data written in Python and Jupyter Notebook.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 weather-data-analysis/
@@ -27,7 +27,7 @@ weather-data-analysis/
 
 ---
 
-## 📊 Weather Analysis Overview
+##  Weather Analysis Overview
 
 - **Dataset Size:** 20 daily records
 - **Average Temperature:** `27.75 °C` (Range: `23.00 °C` to `33.00 °C`)
@@ -38,9 +38,9 @@ weather-data-analysis/
 
 | Weather Condition | Days Count | Avg Temperature | Avg Humidity | Total Rainfall |
 | :--- | :---: | :---: | :---: | :---: |
-| ☀️ **Sunny** | 9 | `30.33 °C` | `60.00%` | `3.30 mm` |
-| ☁️ **Cloudy** | 4 | `27.00 °C` | `73.00%` | `19.70 mm` |
-| 🌧️ **Rainy** | 7 | `24.71 °C` | `81.71%` | `80.00 mm` |
+|  **Sunny** | 9 | `30.33 °C` | `60.00%` | `3.30 mm` |
+|  **Cloudy** | 4 | `27.00 °C` | `73.00%` | `19.70 mm` |
+|  **Rainy** | 7 | `24.71 °C` | `81.71%` | `80.00 mm` |
 
 ---
 
