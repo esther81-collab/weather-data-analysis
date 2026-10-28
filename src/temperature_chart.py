@@ -33,6 +33,7 @@ plt.tight_layout()
 output_file = project_dir / "visualizations" / "temperature_chart.png"
 output_file.parent.mkdir(parents=True, exist_ok=True)
 plt.savefig(output_file, dpi=150)
-plt.close()
-
 print(f"Temperature chart successfully saved to: {output_file}")
+
+# Display the chart window on screen
+plt.show()
